@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">zomato</div>
+  <nav>
+    <a href="#">Add Restaurant</a>
+    <a href="#">Help</a>
+    <a href="#login">Log in</a>
+    <a href="#login">Sign up</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- background image added via CSS -->
+   
+  <h1>Find the best restaurants, cafés and bars</h1>
+
+  <div class="search-box">
+    <select class="location-select">
+  <option>📍 Chennai</option>
+  <option>📍 Bangalore</option>
+  <option>📍 Mumbai</option>
+</select>
+
+    <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+    <button>Search</button>
+  </div>
+</section>
+
+<!-- OPTIONS -->
+ <section class="options">
+  <div class="card" onclick="orderOnline()">
+    <img src="photo2.jpg">
+    <h3>Order Online</h3>
+  </div>
+
+  <div class="card" onclick="dineOut()">
+    <img src="photo 3.jpg">
+    <h3>Dine Out</h3>
+  </div>
+
+  <div class="card" onclick="proOffers()">
+    <img src="offer.jpg">
+    <h3>Pro & Offers</h3>
+  </div>
+
+  <div class="card" onclick="nightLife()">
+    <img src="nightout.avif">
+    <h3>Nightlife & Clubs</h3>
+  </div>
+</section>
+
+
+<!-- INSPIRATION -->
+<section class="inspiration">
+  <h2>Inspiration for your next order</h2>
+
+  <div class="food-categories">
+    <div class="food-card" onclick="orderFood('Pizza')">
+      <img src="pizza.jpg">
+      <p>Pizza</p>
+    </div>
+
+    <div class="food-card" onclick="orderFood('Burger')">
+      <img src="burger.jpg">
+      <p>Burger</p>
+    </div>
+
+    <div class="food-card" onclick="orderFood('South Indian')">
+      <img src="south.jpg">
+      <p>South Indian</p>
+    </div>
+  </div>
+</section>
+
+<!-- GET APP -->
+<section class="app">
+
+  <!-- TEXT (FIRST SLIDE / TOP PART) -->
+  <h2>Get the Zomato app</h2>
+  <p>We will send you a link to download the app</p>
+
+  <!-- INPUT (NEXT PART) -->
+  <div class="app-input">
+    <input type="text" id="mobile" placeholder="Enter mobile number">
+    <button onclick="shareApp()">Share App Link</button>
+  </div>
+
+  <!-- STORE BUTTONS -->
+  <div class="store">
+    <img src="app store.png" alt="Download on App Store">
+    <img src="google p.webp" alt="Get it on Google Play">
+  </div>
+
+</section>
+
+
+
+
+
+<!-- LOGIN -->
+<section id="login" class="login">
+  <h2>Login / Sign Up</h2>
+  <input type="text" placeholder="Email or Phone">
+  <input type="password" placeholder="Password">
+  <button onclick="loginSuccess()">Continue</button>
+</section>
+
+  <footer>
+    <p>&copy; 2026 zomato. All Rights Reserved.</p>
+    
+  </footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
